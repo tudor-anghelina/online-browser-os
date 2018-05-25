@@ -7,13 +7,7 @@
   transition: none;
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
-  background-color: olivedrab;
-  font-family: 'Ubuntu', sans-serif;
-  transition: all 0.5s ease;
-}
+
 
 #wallpaper {
   position: fixed;
@@ -221,13 +215,15 @@ i.close:hover {
 .cookie-choices-buttons a.cookie-choices-button:before {
   width: 120%;
   height: 100%;
-  background-color: red;
+  background-color: #68B684;
   content: "";
   display: inline-block;
   position: absolute;
   left: -130%;
   transform: skewX(-25deg);
   top: 0;
+  z-index:-1;
+  transition: all 0.5s ease;
 }
 
 .cookie-choices-buttons a.cookie-choices-button:hover:before {
@@ -238,8 +234,6 @@ i.close:hover {
   display: inline-block;
   position: absolute;
   left: -50%;
-  transform: skewX(-25deg);
-  top: 0;
 }
 
 .cookie-choices-buttons a.cookie-choices-button:after {
